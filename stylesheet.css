@@ -9,7 +9,6 @@
     z-index: 1;
     width: 52px;
     height: 52px;
-    cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
@@ -17,7 +16,7 @@
     border: none;
     background-clip: padding-box;
     transition: width 1s, height 1s;
-    background-image: url("https://i.imgur.com/F6lf52m.png");
+    background-image: url(https://i.imgur.com/F6lf52m.png);
 }
 
 .bpw-floating-button i {
