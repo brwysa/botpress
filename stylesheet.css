@@ -174,3 +174,8 @@
 .bpw-message-bubble {
   border-radius: 20px 20px 5px 20px;
 }
+
+.bpw-header-title-container .bpw-bot-avatar {
+  background-color: --white;
+}
+
