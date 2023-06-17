@@ -128,3 +128,17 @@
     flex-direction: row; /* Arrange the voice recorder's content horizontally */
     align-items: center; /* Center the voice recorder's content vertically */
 }
+
+/* Styles the Header Container */
+.bpw-header-container {
+    /* sets the border radius of the element */
+    border-radius: var(--spacing-large);
+    /* sets the background color of the element */
+    background-color: #005152;
+    /* sets the border of the element */
+    border: 1px solid var(--zinc-200);
+    /* sets the border radius of the element (repeated declaration) */
+    border-radius: var(--spacing-medium);
+    /* sets the padding of the element */
+    padding: var(--spacing-large) var(--spacing-x-large);
+}
