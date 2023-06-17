@@ -42,3 +42,135 @@
     background-color: #ff5d5d;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
 }
+
+/* Styles the header icon element */
+.bpw-header-icon {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    color: var(--shark);
+    line-height: 0;
+    margin-left: var(--spacing-large);
+    text-align: right;
+    vertical-align: middle;
+    cursor: pointer;
+    fill: var(--shark);
+    width: 16px;
+    height: 16px;
+    transition: fill 0.3s;
+}
+
+.bpw-header-icon svg,
+.bpw-header-icon svg path {
+    fill: var(--shark);
+    transition: fill 0.3s;
+}
+
+.bpw-header-icon:hover,
+.bpw-header-icon:hover svg,
+.bpw-header-icon:hover svg path {
+    fill: var(--reef);
+}
+
+/* Styles the Header Title & Subtitle */
+.bpw-header-title-flexbox {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.bpw-header-title-container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.bpw-header-title-container .bpw-bot-avatar {
+    display: none;
+}
+
+.bpw-header-title-container .bpw-bot-avatar svg {
+    zoom: 0.6;
+}
+
+.bpw-header-name {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--zinc-600);
+}
+
+.bpw-header-subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--zinc-400);
+}
+
+.bpw-header-unread {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Styles the Header Container */
+.bpw-header-container {
+    border-radius: var(--spacing-large);
+    background: var(--white);
+    border: 1px solid var(--zinc-200);
+    border-radius: var(--spacing-medium);
+    padding: var(--spacing-large) var(--spacing-x-large);
+}
+
+/* Customization */
+.bpw-header-name::before {
+    content: "FitBot";
+}
+
+.bpw-header-subtitle::before {
+    content: "Your Fitness, Lifestyle, and Diet Companion";
+}
+
+:root {
+    --main-color: #005152;
+    --secondary-color: #ACF8F5;
+    --third-color: #F1BF2E;
+    --fourth-color: #717E76;
+}
+
+/* Update colors */
+.bpw-header-icon,
+.bpw-header-container {
+    border-color: var(--secondary-color);
+}
+
+.bpw-header-name,
+.bpw-header-subtitle {
+    color: var(--main-color);
+}
+
+.bpw-header-icon:hover,
+.bpw-header-icon:hover svg,
+.bpw-header-icon:hover svg path {
+    fill: var(--third-color);
+}
+
+.bpw-header-unread {
+    background-color: var(--fourth-color);
+}
