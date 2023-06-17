@@ -1,3 +1,13 @@
+:root {
+  --white: #FFFFFF;
+  --zinc-200: #CCCCCC;
+  --zinc-900: #000000;
+  --spacing-medium: 8px;
+  --zinc-300: #999999;
+  --theme-primary: #005152;
+  --theme-primary-hover: #003D3E;
+}
+
 /* Style for the composer section */
 .bpw-composer {
   padding: 0; /* Remove any padding */
@@ -134,11 +144,20 @@
     /* sets the border radius of the element */
     border-radius: var(--spacing-large);
     /* sets the background color of the element */
-    background-color: #005152;
+    background-color: --white;
     /* sets the border of the element */
     border: 1px solid var(--zinc-200);
     /* sets the border radius of the element (repeated declaration) */
     border-radius: var(--spacing-medium);
     /* sets the padding of the element */
     padding: var(--spacing-large) var(--spacing-x-large);
+}
+
+.bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #EEBD2C;
+  color: #333333;
+}
+
+.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #00FEEB;
 }
