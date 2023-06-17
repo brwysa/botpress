@@ -93,7 +93,7 @@
     /* Sets the opacity to 0.4 to make the button appear slightly transparent */
     opacity: 0.4;
     /* Sets the background color to a variable named "--theme-primary" */
-    background-color: var(--theme-primary);
+    background-color: rgba(0, 254, 235, 0.5);
     /* Changes the cursor to the default cursor */
     cursor: default;
 }
@@ -119,7 +119,7 @@
     height: 24px; /* Set the button's height to be 24 pixels */
     color: transparent; /* Hide any text that might appear inside the button */
     cursor: pointer; /* Show the pointer cursor when the button is hovered over */
-    background-image: url(./button.png) !important; /* Add an image to the button */
+    background-image: url("https://i.imgur.com/JbFz9W6.png") !important; /* Add an image to the button */
     background-repeat: no-repeat !important; /* Don't repeat the image */
     background-position: center !important; /* Center the image inside the button */
     transition: background-color 0.2s; /* Make the button's background color change smoothly over a short period of time */
@@ -128,7 +128,7 @@
 /* This is the CSS style for the button that sends a message when it's not disabled and is being hovered over */
 
 .bpw-send-button:not(:disabled):hover {
-    background-color: var(--theme-primary-hover); /* Change the button's background color to a different color when it's being hovered over */
+    background-color: background-color: #00FEEB;; /* Change the button's background color to a different color when it's being hovered over */
 }
 
 /* This is the CSS style for the voice recorder */
@@ -156,26 +156,16 @@
 .bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
   background-color: #EEBD2C;
   color: #333333;
+  border-radius: 40px 40px 40px 5px;
 }
 
 .bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
   background-color: #00FEEB;
   color: #333333;
+  border-radius: 40px 40px 5px 40px;
 }
 
-.bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
-  color: #333333;
-}
-
-.bpw-message {
-  border-radius: 20px 20px 20px 5px;
-}
-
-.bpw-message-bubble {
-  border-radius: 20px 20px 5px 20px;
-}
-
-.bpw-header-title-container .bpw-bot-avatar {
+.bpw-header-icon {
   background-color: --white;
 }
 
